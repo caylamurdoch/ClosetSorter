@@ -1,1 +1,1 @@
-# ClosetSorter
+# closet-sorter
