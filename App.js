@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
 import AppIntroSlider from 'react-native-app-intro-slider';
+import FlowChart from './src/components/FlowChart';
 
 const slides = [
   {
@@ -17,7 +18,7 @@ const slides = [
   },
   {
     key: 'intro3',
-    title: 'Got one?\n\nThen start sorting!',
+    title: 'Got one?\nThen start sorting!',
     backgroundColor: '#22bcb5',
   }
 ];
@@ -45,7 +46,7 @@ export default class App extends Component {
     if (this.state.showRealApp) {
       return (
         <View style={styles.container}>
-          <Text>Real Apps</Text>
+		  <FlowChart />
         </View>
       );
     } else {
@@ -77,7 +78,7 @@ const styles = StyleSheet.create({
   },
   slide: {
     flex: 1,
-	backgroundColor: '#22bcb5',
+	backgroundColor: '#FF4F58',
     justifyContent: 'center',
   },
   text: {
